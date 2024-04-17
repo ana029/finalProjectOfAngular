@@ -1,7 +1,16 @@
+.conteinerforbackground{
+    width: 100vw;
+    background-image: url(../../assets/images/backOfAll.png);
+    background-repeat: repeat;
+    background-blend-mode: luminosity;
+    background-size: 50%;
+    margin:0; 
+    
+}
 .postsConteiner{
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5px;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -28,11 +37,12 @@ input{
 button{
     color: white;
     background-color: rgb(17, 125, 248);
-    padding: 15px;
+    padding: 15px ;
     border-radius: 10%;
     border: 1px solid white;
     margin-bottom: 20px;
     font-weight: bold;
+    margin: 50px;
 }
 .addingNewPost{
     color: white;
@@ -42,7 +52,9 @@ button{
     background-color: red;
     margin-left: 10px;
     width: 60px;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 15px ;
 }
 table {
     width: 100%;

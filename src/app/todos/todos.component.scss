@@ -1,10 +1,18 @@
+.conteinerforbackground{
+    width: 100vw;
+    background-image: url(../../assets/images/backOfAll.png);
+    background-repeat: repeat;
+    background-blend-mode: luminosity;
+    background-size: 50%;
+    margin:0;  
+}
   .mainContainer {
     max-width: 1200px;
     margin:0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 100px;
     flex-direction: column;
     gap: 10px;
   }

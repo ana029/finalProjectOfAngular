@@ -15,7 +15,7 @@ export class PostsComponent implements OnInit {
   newAutor='';
   newTitle='';
   newBody='';
-  addingNewPost=false;
+  addingNewPost=false; 
 
   constructor(private apiService: ApiService){}
 
@@ -23,12 +23,14 @@ export class PostsComponent implements OnInit {
     this.apiService.getUsers().subscribe((users: User[]) => {
       this.users = users;    
     })
-    
+
 
     this.apiService.getPosts().subscribe((posts: Post[]) => {
       this.posts = posts;    
     })
+    
   }
+
 
   addNewPostInput(){
     this.addingNewPost=true;
@@ -45,6 +47,9 @@ export class PostsComponent implements OnInit {
     ]
     this.addingNewPost=false;
   }
-  
+  getUserName(userId: number): String {
+    const user = this.users?.find((user) => user.id === userId);
+    return user ? user.name : '';
+  }
 }
 

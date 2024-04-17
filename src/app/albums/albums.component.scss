@@ -1,0 +1,34 @@
+.conteinerforbackground{
+    width: 100vw;
+    background-image: url(../../assets/images/backOfAll.png);
+    background-repeat: repeat;
+    background-blend-mode: luminosity;
+    background-size: 50%;
+    margin:0;  
+}
+.albumConteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  td {
+    text-align: left;
+  }
+  td,
+  th {
+    padding: 15px 30px;
+    width: 33%;
+  }
+  th {
+    text-align: center;
+    color: white;
+    background-color: rgb(17, 125, 248);
+  }
+  tr:nth-child(odd) {
+    background-color: #ebebeb;
+  }
