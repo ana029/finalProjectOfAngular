@@ -1,0 +1,17 @@
+
+    <div class="mainContainer">
+      <div *ngFor="let todo of todos" class="content">
+        <p><span>Title:</span>{{ todo.title }}</p>
+        <div class="completion">
+          <span>Completion:</span>
+          <img
+            [src]="
+              todo.completed
+                ? '../../assets/images/true.png'
+                : '../../assets/images/false1.png'
+            "
+            alt="Completed Icon"
+          />
+        </div>
+      </div>
+    </div>
