@@ -24,7 +24,7 @@ export class ApiService {
   }
 
   getComments(): Observable<CommentOfPOst[]>{
-    return this.http.get<CommentOfPOst[]>('https://jsonplaceholder.typicode.com/comments');
+    return this.http.get<CommentOfPOst[]>('https://jsonplaceholder.typicode.com/posts/1/comments');
   }
 
   getAlbums(): Observable<Album[]>{

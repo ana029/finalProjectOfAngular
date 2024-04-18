@@ -14,14 +14,15 @@ div.header{
 ul{
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
-a{
-    list-style: none;
-
+li{
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 .active{
-    color: red;
+    background-color: red;
+    color: white;
 }
 .logoimage{
     background-color: red;

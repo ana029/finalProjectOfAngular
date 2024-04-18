@@ -6,19 +6,23 @@ import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
-import { PostsComponent } from './posts/posts.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { TodosComponent } from './todos/todos.component';
 import { MainComponent } from './main/main.component';
+import { PostwithComponent } from './posts/postwith/postwith.component';
+import { ConteinerForPostComponent } from './conteiner-for-post/conteiner-for-post.component';
+import { PostsWithIdComponent } from './posts-with-id/posts-with-id.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PostsComponent,
     AlbumsComponent,
     TodosComponent,
-    MainComponent
+    MainComponent,
+    PostwithComponent,
+    ConteinerForPostComponent,
+    PostsWithIdComponent
   ],
   imports: [
     BrowserModule,

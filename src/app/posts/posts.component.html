@@ -1,29 +1,3 @@
-<div class="conteinerforbackground">
-    <div class="postsConteiner">
-        <button type="button" (click)="addNewPostInput()" id="newpostConteiner">Add Post</button>
-        <div *ngIf="addingNewPost" class="addNewPosts">
-            <p class="addingNewPost">Post Autor</p>
-            <input type="text" [(ngModel)]="newAutor" title="postAutor">
-            <p class="addingNewPost">Title</p>
-            <input type="text" [(ngModel)]="newTitle" title="postTitle">
-            <p class="addingNewPost">Body</p>
-            <input type="text" [(ngModel)]="newBody" title="postBody">
-            <button  class="add" type="button" (click)="addNewPost()" id="newpost">Add</button>
-        </div>
-        <table>
-            <tr>
-              <th>POST'S USER</th>
-              <th>TITLE</th>
-              <th>BODY</th>
-            </tr>
-            <tr  *ngFor="let post of posts">
-              <td>{{ getUserName(post.userId) }}</td>
-              <td>{{ post.title }}</td>
-              <td>{{ post.body }}</td>
-            </tr>
-          </table>
-    
-      </div>
-</div>
+
   
   

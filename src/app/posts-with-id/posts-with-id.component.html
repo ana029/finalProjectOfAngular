@@ -1,0 +1,26 @@
+<div class="postWithId">
+    <div class="postInfo">
+        <img src='../../../assets/images/backarrow.png' class="backarrow" alt="avatar image" />
+        <h2 class="addingNewPost">Title</h2>
+        <p></p>
+        <h2 class="addingNewPost">Body</h2>
+        <p></p>
+    </div>
+    <div>
+        <div class="comentOfPost" *ngFor="let coment of coments" >
+            <div class="content">
+                <div class="imageofAvatar">
+                    <img src='../../../assets/images/avatar.jpg' alt="avatar image" />
+                </div>
+                <div  >
+                    <h2>{{coment.name}}</h2>
+                    <p>{{coment.body }}</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+</div>
+

@@ -4,11 +4,12 @@ import { Post } from '../interfaces/post.interfaces';
 import { ApiService } from '../services/api.service';
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss']
+  selector: 'app-conteiner-for-post',
+  templateUrl: './conteiner-for-post.component.html',
+  styleUrls: ['./conteiner-for-post.component.scss']
 })
-export default class PostsComponent implements OnInit {
+export class ConteinerForPostComponent implements OnInit {
+
   users !: User[];
   posts !: Post[];
   newUser = '';
@@ -17,9 +18,10 @@ export default class PostsComponent implements OnInit {
   newBody='';
   addingNewPost=false; 
 
-  constructor(private apiService: ApiService){}
 
-  ngOnInit(){
+  constructor(private apiService: ApiService) { }
+
+  ngOnInit(): void {
     this.apiService.getUsers().subscribe((users: User[]) => {
       this.users = users;    
     })
@@ -28,10 +30,7 @@ export default class PostsComponent implements OnInit {
     this.apiService.getPosts().subscribe((posts: Post[]) => {
       this.posts = posts;    
     })
-    
   }
-
-
   addNewPostInput(){
     this.addingNewPost=true;
   }
@@ -51,7 +50,4 @@ export default class PostsComponent implements OnInit {
     const user = this.users?.find((user) => user.id === userId);
     return user ? user.name : '';
   }
-
-
 }
-
