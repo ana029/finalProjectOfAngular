@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../interfaces/users.interfase';
 import { Post } from '../interfaces/post.interfaces';
 import { ApiService } from '../services/api.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-conteiner-for-post',
@@ -18,8 +19,10 @@ export class ConteinerForPostComponent implements OnInit {
   newBody='';
   addingNewPost=false; 
 
-
-  constructor(private apiService: ApiService) { }
+  constructor(
+    private apiService: ApiService,
+    private route:ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
     this.apiService.getUsers().subscribe((users: User[]) => {
@@ -30,6 +33,8 @@ export class ConteinerForPostComponent implements OnInit {
     this.apiService.getPosts().subscribe((posts: Post[]) => {
       this.posts = posts;    
     })
+    
+    
   }
   addNewPostInput(){
     this.addingNewPost=true;
@@ -50,4 +55,5 @@ export class ConteinerForPostComponent implements OnInit {
     const user = this.users?.find((user) => user.id === userId);
     return user ? user.name : '';
   }
+  
 }

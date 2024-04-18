@@ -1,6 +1,6 @@
 .conteinerforbackground{
     width: 100vw;
-    background-image: url(../../assets/images/backOfAll.png);
+    background-image: url('../../assets/images/backOfAll.png');
     background-repeat: repeat;
     background-blend-mode: luminosity;
     background-size: 50%;
@@ -68,6 +68,7 @@ table {
   th {
     padding: 15px 30px;
     width: 33%;
+    cursor: pointer;
   }
   th {
     text-align: center;

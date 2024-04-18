@@ -10,11 +10,8 @@ import { PostsWithIdComponent } from './posts-with-id/posts-with-id.component';
 const routes: Routes = [
   {path: '', component:MainComponent},
   {path:'main',component:MainComponent},
-  {path:'posts', component: ConteinerForPostComponent,
-    children: [
-      {path:'posts/:id',component:PostsWithIdComponent}
-    ]
-  },
+  {path:'posts', component: ConteinerForPostComponent },
+  {path:'posts/:id',component:PostsWithIdComponent},
   {path: 'albums', component: AlbumsComponent},
   {path: 'todos', component :TodosComponent}
 ];
