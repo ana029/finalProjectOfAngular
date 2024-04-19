@@ -1,14 +1,18 @@
 .conteinerForPhotos{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     gap:10px;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 }
 p{
     width: 150px;
 }
 span{
     color: rgb(0, 162, 255);
+}
+.photoo{
+    border-radius: 5px;
 }

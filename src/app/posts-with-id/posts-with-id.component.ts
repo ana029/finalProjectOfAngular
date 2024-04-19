@@ -14,6 +14,9 @@ export class PostsWithIdComponent implements OnInit {
   posts !: Post[];
   newTitle='';
   newBody='';
+  newComentName='';
+  newComment='';
+
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
@@ -23,6 +26,17 @@ export class PostsWithIdComponent implements OnInit {
     this.apiService.getPosts().subscribe((posts: Post[]) => {
       this.posts = posts;    
     })
+  }
+  addNewComent(){
+    this.coments =[
+      ...this.coments,
+      {postId: 1,
+        id: this.posts.length+1,
+        name: this.newComentName,
+        email: "something",
+        body: this.newComment
+        }
+    ]
   }
 
 }

@@ -17,6 +17,8 @@ export class ConteinerForPostComponent implements OnInit {
   newAutor='';
   newTitle='';
   newBody='';
+  postTitle='';
+  postBody='';
   addingNewPost=false; 
 
   constructor(
@@ -54,6 +56,14 @@ export class ConteinerForPostComponent implements OnInit {
   getUserName(userId: number): String {
     const user = this.users?.find((user) => user.id === userId);
     return user ? user.name : '';
+  }
+  changeInfoTitle(postId: number): String{
+    const post = this.posts.find((post) => post.id === postId);
+    return post ? post.title :'';
+  }
+  changeInforoBody(postId: number){
+    const post = this.posts.find((post) => post.id === postId);
+    return post ? post.body :'';
   }
   
 }

@@ -10,17 +10,18 @@
             <input type="text" [(ngModel)]="newBody" title="postBody">
             <button  class="add" type="button" (click)="addNewPost()" id="newpost">Add</button>
         </div>
-        <router-outlet ></router-outlet>
+        
         <table>
             <tr>
               <th>POST'S USER</th>
               <th>TITLE</th>
               <th>BODY</th>
             </tr>
-            <tr  *ngFor="let post of posts" [routerLink]="['/posts', post.id]" >
+            <tr  *ngFor="let post of posts" [routerLink]="['/posts', post.id]">
               <td>{{ getUserName(post.userId) }}</td>
               <td>{{ post.title }}</td>
               <td>{{ post.body }}</td>
+              <router-outlet></router-outlet>
             </tr>
           </table>
     

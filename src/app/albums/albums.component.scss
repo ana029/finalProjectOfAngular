@@ -23,11 +23,13 @@ table {
   th {
     padding: 15px 30px;
     width: 33%;
+    cursor: pointer;
   }
   th {
     text-align: center;
     color: white;
     background-color: rgb(17, 125, 248);
+
   }
   tr:nth-child(odd) {
     background-color: #ebebeb;
