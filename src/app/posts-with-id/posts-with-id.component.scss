@@ -3,12 +3,13 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    background-image: url('../../assets/images/backOfAll.png');
+    background-repeat: repeat;
     gap: 4%;
     margin-bottom: 10px;
 }
 .postWithId>div{
     width: 48%;
-    height: 550px;
     margin-top: 30px;
 }
 .postInfo{
@@ -20,7 +21,7 @@
 .comentOfPost{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .commentsWithScroll{
     height: 400px;
@@ -28,6 +29,8 @@
 }
 .content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
     background-color: white;
     border-radius: 10px;
@@ -67,7 +70,7 @@ input{
     border-bottom: 1px solid black;
     background-color: rgb(235, 233, 233);
 }
-button{
+button.add{
     color: white;
     background-color: gray;
     padding: 10px ;
@@ -75,4 +78,13 @@ button{
     border: 1px solid white;
     font-weight: bold;
     margin: 5px;
+}
+button.aditPost{
+    color: black;
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 10%;
+    border: 1px solid white;
+    font-weight: bold;
+    margin-top: 15px;
 }

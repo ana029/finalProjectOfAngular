@@ -16,6 +16,7 @@ export class PostsWithIdComponent implements OnInit {
   newBody='';
   newComentName='';
   newComment='';
+  editPostIsActive = false;
 
   constructor(private apiService: ApiService) { }
 
@@ -37,6 +38,9 @@ export class PostsWithIdComponent implements OnInit {
         body: this.newComment
         }
     ]
+  }
+  editPost(){
+    this.editPostIsActive=true;
   }
 
 }

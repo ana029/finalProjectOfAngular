@@ -2,9 +2,10 @@
     <div class="postInfo">
         <img src='../../assets/images/backarrow.png' class="backarrow" alt="avatar image" />
         <h2 >Title</h2>
-        <p>{{newTitle}}</p>
+        <p>ea molestias quasi exercitationem repellat qui ipsa sit aut</p>
         <h2 >Body</h2>
-        <p>{{newBody}}</p>
+        <p>et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut</p>
+        <button  class="aditPost" type="button" (click)="editPost()" id="editPost">Edit</button>
     </div>
     <div class="commentInfo">
         <div class="commentsWithScroll">
@@ -22,24 +23,25 @@
             </div>
         </div>
         <div >
+            <br>
             <p>Add Comment</p>
         </div>
-        <div class="addComment">
-            <div>
-                <img src='../../assets/images/avatar.jpg' alt="avatar image" />
+        <div class="conteinerForAddingComments">
+            <div class="addComment">
+                <div>
+                    <img src='../../assets/images/avatar.jpg' alt="avatar image" />
+                </div>
+                <div>
+                    <h3 class="addingNewComment">Name</h3>
+                    <input type="text" [(ngModel)]="newComentName" title="comentTitle">
+                    <h4 class="addingNewComment">Comment</h4>
+                    <input type="text" [(ngModel)]="newComment" title="commentBody">
+                    <button  class="add" type="button" (click)="addNewComent()" id="newpost">Add</button>
+                </div> 
             </div>
-            <div>
-                <h3 class="addingNewComment">Name</h3>
-                <input type="text" [(ngModel)]="newComentName" title="comentTitle">
-                <h4 class="addingNewComment">Comment</h4>
-                <input type="text" [(ngModel)]="newComment" title="commentBody">
-                <button  class="add" type="button" (click)="addNewComent()" id="newpost">Add</button>
-            </div>
-            
-            
         </div>
+        
     </div>
-    
 
 </div>
 
