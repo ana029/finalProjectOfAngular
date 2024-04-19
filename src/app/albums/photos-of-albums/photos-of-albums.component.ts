@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Album } from 'src/app/interfaces/album.interface';
+import { Photo } from 'src/app/interfaces/photo.interface';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-photos-of-albums',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotosOfAlbumsComponent implements OnInit {
 
-  constructor() { }
+  photos !:Photo[];
+  albums!: Album[];
+
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getAlbums().subscribe((albums: Album[]) => {
+      this.albums = albums;
+    });
+
+    this.apiService.getPhotos().subscribe((photos: Photo[]) => {
+      this.photos = photos;
+    });
   }
 
 }

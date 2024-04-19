@@ -32,7 +32,7 @@ export class ApiService {
   }
 
   getPhotos(): Observable<Photo[]>{
-    return this.http.get<Photo[]>('https://jsonplaceholder.typicode.com/photos');
+    return this.http.get<Photo[]>('https://jsonplaceholder.typicode.com/albums/1/photos');
   }
 
   getTodos(): Observable<Todo[]>{

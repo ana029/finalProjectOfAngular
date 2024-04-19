@@ -1,1 +1,7 @@
-<p>photos-of-albums works!</p>
+<div class="conteinerForPhotos">
+    <div  *ngFor="let photo of photos" >
+        <img src="{{photo.thumbnailUrl}}" class="backarrow" alt="photos of albums" />
+        <p><span>TiTle:</span>={{photo.title}}</p>
+    </div>
+</div>
+
