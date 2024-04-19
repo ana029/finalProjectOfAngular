@@ -12,6 +12,7 @@ import { MainComponent } from './main/main.component';
 import { PostwithComponent } from './posts/postwith/postwith.component';
 import { ConteinerForPostComponent } from './conteiner-for-post/conteiner-for-post.component';
 import { PostsWithIdComponent } from './posts-with-id/posts-with-id.component';
+import { PhotosOfAlbumsComponent } from './photos-of-albums/photos-of-albums.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostsWithIdComponent } from './posts-with-id/posts-with-id.component';
     MainComponent,
     PostwithComponent,
     ConteinerForPostComponent,
-    PostsWithIdComponent
+    PostsWithIdComponent,
+    PhotosOfAlbumsComponent
   ],
   imports: [
     BrowserModule,

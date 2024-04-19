@@ -1,3 +1,4 @@
+<router-outlet></router-outlet>
 <div class="conteinerforbackground">
     <div class="albumConteiner">
         <table>
@@ -6,7 +7,7 @@
               <th>TITLE</th>
               <th>BODY</th>
             </tr>
-            <tr  *ngFor="let album of albums">
+            <tr  *ngFor="let album of albums" [routerLink]="['/albums',album.id]">
               <td>{{ getUserName(album.userId) }}</td>
               <td>{{ album.title }}</td>
               <td>{{ 50 }}</td>

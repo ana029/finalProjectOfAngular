@@ -6,6 +6,7 @@ import { TodosComponent } from './todos/todos.component';
 import { MainComponent } from './main/main.component';
 import { ConteinerForPostComponent } from './conteiner-for-post/conteiner-for-post.component';
 import { PostsWithIdComponent } from './posts-with-id/posts-with-id.component';
+import { PhotosOfAlbumsComponent } from './albums/photos-of-albums/photos-of-albums.component';
 
 const routes: Routes = [
   {path: '', component:MainComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'posts', component: ConteinerForPostComponent },
   {path:'posts/:id',component:PostsWithIdComponent},
   {path: 'albums', component: AlbumsComponent},
+  {path:'albums/:id', component:PhotosOfAlbumsComponent},
   {path: 'todos', component :TodosComponent}
 ];
 
