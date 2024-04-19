@@ -13,6 +13,7 @@ export class ConteinerForPostComponent implements OnInit {
 
   users !: User[];
   posts !: Post[];
+  postInfo !:Post[]
   newUser = '';
   newAutor='';
   newTitle='';

@@ -1,6 +1,6 @@
 .editpostComponent{
     width: 500px;
-    height: 300px;
+    height: 600px;
     border-radius: 5px;
     background-color: white;
     position: absolute;
@@ -12,7 +12,7 @@
     transform: translate(-50%, -50%);
     box-shadow: 4px 4px 25px gray;
 }
-button{
+.closePopup{
     position: absolute;
     top: 0;
     right: 0;
@@ -21,5 +21,25 @@ button{
     border: none;
     background-color: white;
     color: red;
-
+}
+.postInfo{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+h2{
+    color: rgb(32, 191, 219);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Updatepost{
+    color: black;
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 10%;
+    border: 1px solid white;
+    font-weight: bold;
+    margin-top: 15px;
 }

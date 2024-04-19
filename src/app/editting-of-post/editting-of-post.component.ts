@@ -13,5 +13,8 @@ export class EdittingOfPostComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onPopupClosed(){
+    this.popupClosed.emit();
+  }
 
 }

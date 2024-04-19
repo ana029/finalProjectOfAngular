@@ -2,7 +2,7 @@
     <div class="postInfo">
         <img src='../../assets/images/backarrow.png' class="backarrow" alt="avatar image" />
         <h2 >Title</h2>
-        <p>ea molestias quasi exercitationem repellat qui ipsa sit aut</p>
+        <p>{{postTitle}}</p>
         <h2 >Body</h2>
         <p>et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut</p>
         <button  class="aditPost" type="button" (click)="editPost()" id="editPost">Edit</button>
@@ -42,7 +42,6 @@
         </div>
         
     </div>
-    <app-editting-of-post *ngIf="editPostIsActive"></app-editting-of-post>
-
+    <app-editting-of-post *ngIf="editPostIsActive" (popupClosed)="editPost()"></app-editting-of-post>
 </div>
 

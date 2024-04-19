@@ -12,7 +12,12 @@ export class PostsWithIdComponent implements OnInit {
 
   coments !: CommentOfPOst[];
   posts !: Post[];
-  newTitle='';
+  @Input() postInnfo!: {
+    userId: number,
+    id: number,
+    title: string,
+    body: string
+  } ;
   newBody='';
   newComentName='';
   newComment='';
@@ -40,7 +45,7 @@ export class PostsWithIdComponent implements OnInit {
     ]
   }
   editPost(){
-    this.editPostIsActive=true;
+    this.editPostIsActive=!this.editPostIsActive;
   }
 
 }
